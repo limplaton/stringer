@@ -1,22 +1,29 @@
 # Stringer
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/stringer`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A Gem file for extending strings functionality
 
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add stringer
-
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-    $ gem install stringer
+    $ gem install lim-stringer
 
 ## Usage
 
-TODO: Write usage instructions here
+    Spacify: concatenates undefined number of strings with a space
+    
+    Minify: Parameters are a string and a max length. If the given string has a greater length than the max length parameter, minify should shorten it to the max                 length and add a "..." to the end. If the string length is shorter than or equal to the max length, minify should return the string itself.
+            Example 1: Stringer.minify("Hello, I'm learning how to create a gem", 10) => "Hello, I'm..."
+            Example 2: Stringer.minify("Hello", 10) => "Hello"
+            
+    Replacify: Parameters string (original string), string (word to be replaced), string ( the replacement). Iterates over a string and replaces each instance of that                word with the replacement provided.
+               Example: Stringer.replacify("I can't do this", "can't", "can") => "I can do this"
+               
+    Tokenize: Parameters string. Iterates over a string and adds each word into an array, then returns that array.
+              Example: Stringer.tokenize("I love to code") => ["I", "love", "to", "code"]
+              
+    Removify: Parameters string (original), string (word to remove). Remove each instance of the second parameter within the original string.
+              Example: Stringer.removify("I'm not a developer", "not") => "I'm a developer"
 
 ## Development
 
