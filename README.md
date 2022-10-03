@@ -10,9 +10,10 @@ Install the gem and add to the application's Gemfile by executing:
 
 ## Usage
 
-    Spacify: concatenates undefined number of strings with a space
+    Spacify: Parameters are strings. It concatenates undefined number of strings with a space
+             Example: Stringer.spacify("Oscar", "Vazquez", "Zweig", "Olasaba", "Hernandez", "Ricardo", "Mendoza") => "Oscar Vazquez Zweig Olasaba Hernandez Ricardo Mendoza"
     
-    Minify: Parameters are a string and a max length. If the given string has a greater length than the max length parameter, minify should shorten it to the max   length and add a "..." to the end. If the string length is shorter than or equal to the max length, minify should return the string itself.
+    Minify: Parameters are a string and a max length. If the given string has a greater length than the max length parameter, minify should shorten it to the max length and add a "..." to the end. If the string length is shorter than or equal to the max length, minify should return the string itself.
             Example 1: Stringer.minify("Hello, I'm learning how to create a gem", 10) => "Hello, I'm..."
             Example 2: Stringer.minify("Hello", 10) => "Hello"
             
@@ -24,12 +25,6 @@ Install the gem and add to the application's Gemfile by executing:
               
     Removify: Parameters string (original), string (word to remove). Remove each instance of the second parameter within the original string.
               Example: Stringer.removify("I'm not a developer", "not") => "I'm a developer"
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
